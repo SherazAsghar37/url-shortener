@@ -1,7 +1,7 @@
 # Dynamic URL Shortener Application
 
 ## Introduction
-After completing JavaScript to write Firebase Cloud Functions, I started exploring Node.js. Using this, I crafted a dynamic URL shortener application using Express.js and MongoDB running in a Docker container. This versatile project is accessible via web, API, and a custom Discord Bot.
+An Url shortener application built on top of Nodejs and integrated discord bot.
 
 ## Features
 - Dynamic URL shortening
@@ -28,8 +28,3 @@ After completing JavaScript to write Firebase Cloud Functions, I started explori
 - Access the web interface at [http://localhost:3000](http://localhost:3000).
 - Use the API endpoints for programmatically shortening URLs.
 - Integrate the Discord Bot with your Discord server for URL shortening functionality.
-
-## Future Plans
-Next, I'll learn TypeScript to build seamless Flutter applications using Node.js and Express.js as a backend, and MongoDB or PostgreSQL as a SQL database.
-
-Cheers to the coding journey ahead!
