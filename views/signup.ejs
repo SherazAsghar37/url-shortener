@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Page</title>
+  </head>
+  <body>
+    <h1>Sign Up Page</h1>
+    <div>
+      <form action="/user" method="POST">
+        <label for="">Name: </label>
+        <input type="text" name="name" placeholder="xyz" /><br />
+        <label for="">Email: </label>
+        <input
+          type="text"
+          name="email"
+          placeholder="http://www.example.com"
+        /><br />
+
+        <label for="">password: </label>
+        <input type="text" name="password" placeholder="123456789" /><br />
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+    <% if (locals.response) { %>
+    <h1><%= response %></h1>
+    <% } %>
+    <a href="/login">Dont have an account? login</a>
+  </body>
+</html>

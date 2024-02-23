@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      body {
+        background-color: #000000;
+        color: #ffffff;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h1>Url Shortner</h1>
+    <div>
+      <form action="/" method="POST">
+        <label for="">Enter your original URL</label>
+        <br />
+        <input
+          type="text"
+          name="redirectUrl"
+          id="redirectUrl"
+          placeholder="http://www.example.com"
+        /><br />
+        <button type="submit">Generate</button>
+      </form>
+    </div>
+
+    <% if (locals.response) { %>
+    <h2>Generated url :</h2>
+    <a href="<%= response %>"><%= response %></a>
+    <% } %>
+  </body>
+</html>
